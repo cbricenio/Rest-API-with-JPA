@@ -1,7 +1,14 @@
 package com.bootcamp.restapiwithjpa.student;
 
 import com.bootcamp.restapiwithjpa.course.Course;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.JoinColumn;
 
 @Entity
 @Table(name = "student")
